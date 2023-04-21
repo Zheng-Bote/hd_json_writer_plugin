@@ -3,8 +3,8 @@
  * @author ZHENG Robert (www.robert.hase-zheng.net)
  * @brief JSon writer plugin for header_docu
  * @details JSon array of JSon objects
- * @version 0.2.0
- * @date 2023-04-16
+ * @version 0.3.0
+ * @date 2023-04-21
  *
  * @copyright Copyright (c) ZHENG Robert 2023
  *
@@ -57,7 +57,7 @@ void Hd_json_writer_plugin::writeFile(QMap<QString, QString> mapParseKeys, QMap<
         jSub[key] = val;
     }
     for (auto [key, val] : mapParseKeys.asKeyValueRange()) {
-        jSub[key] = val;
+        jSub[key] = val.trimmed();
     }
 
     jObj["data"] = jSub;
