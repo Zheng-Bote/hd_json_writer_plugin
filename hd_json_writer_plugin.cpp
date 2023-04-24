@@ -3,7 +3,7 @@
  * @author ZHENG Robert (www.robert.hase-zheng.net)
  * @brief JSon writer plugin for header_docu
  * @details JSon array of JSon objects
- * @version 0.3.0
+ * @version 1.0.0
  * @date 2023-04-21
  *
  * @copyright Copyright (c) ZHENG Robert 2023
@@ -15,12 +15,12 @@
 Hd_json_writer_plugin::Hd_json_writer_plugin(QObject *parent)
 {
     Q_UNUSED(parent);
-    qInfo() << "Plugin Constructor";
+    qDebug() << "Plugin Constructor";
 }
 
 Hd_json_writer_plugin::~Hd_json_writer_plugin()
 {
-    qInfo() << "Plugin Deconstructed";
+    qDebug() << "Plugin Deconstructed";
 }
 
 void Hd_json_writer_plugin::test(QString name)
