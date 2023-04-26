@@ -15,7 +15,7 @@
 
 const QString PLUGIN_SHORTNAME = "json";
 const QString PLUGIN_NAME ="json writer";
-const QString PLUGIN_VERSION = "1.0.0";
+const QString PLUGIN_VERSION = "1.1.0";
 
 class Hd_json_writer_plugin : public QObject, public Plugin
 {
